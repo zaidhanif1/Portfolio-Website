@@ -1,0 +1,76 @@
+.navigation-container
+{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    background-color: transparent;
+    justify-content: space-between;
+    position: fixed;   
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* logo  -------------------------- */
+
+.nav-logo
+{
+    width: 50px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin-left: 20px;
+}
+.nav-logo:hover
+{
+    transform: scale(1.1);
+}
+
+
+/* logo  -------------------------- */
+
+
+
+/* social icons -------------------------- */
+.nav-social-icons
+{
+    display: flex;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.nav-git
+{
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.nav-git:hover
+{
+    transform: scale(1.05);
+}
+
+.nav-linkedin
+{
+    transition: transform 0.3s ease;
+
+}
+
+.nav-linkedin:hover
+{
+    transform: scale(1.05);
+}
+
+
+/* social icons -------------------------- */
