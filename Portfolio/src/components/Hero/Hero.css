@@ -1,17 +1,19 @@
-.hero-section
+#hero-section
 {
     margin-top: 100px;
     animation: fadeIn 1s ease-in-out forwards;
     transition: 0.5s ease;
+    text-align: center;
+    scroll-margin-top: 80px;
 }
 
-.hero-section h1
+#hero-section h1
 {
     font-size: 4rem;
     font-weight: 600;
 }
 
-.hero-section h3
+#hero-section h3
 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -20,39 +22,49 @@
 
 .view-my-work-btn
 {
+    display: inline-block;
     background-color: #ffffff;
     color: #121212;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     border: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
     font-weight: 600;
-    
+    animation: fadeIn 1s ease-in-out forwards;
+    text-decoration: none;
 }
 .resume-btn
 {
+    display: inline-block;
     margin-left: 20px;
     background-color: #ffffff;
     color: #121212;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     border: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
     font-weight: 600;
+    animation: fadeIn 1s ease-in-out forwards;
+    text-decoration: none;
 }
 
-
-.hero-section button:hover
-{
-
+.view-my-work-btn:hover,
+.resume-btn:hover {
     transform: scale(1.05);
 }
+.view-my-work-btn:active,
+.resume-btn:active {
+    transform: scale(.95);
+}
+
+
+
 .zaid-img
 {
     padding: 1rem;
@@ -67,6 +79,7 @@
 .zaid-img:hover
 {
     transform: scale(1.05);
+    color: red;
 }
 .about-section {
     display: flex;

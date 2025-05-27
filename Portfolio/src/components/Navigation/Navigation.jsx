@@ -8,10 +8,15 @@ import "./Navigation.css"
 
 export default function Navigation()
 {
+    function removeTag(e)
+    {
+        e.preventDefault()
+        
+    }
     return(
             <nav className="navigation-container">
                 <div logo-container>
-                <a href="/"><img src= {transparentLogo} alt="Website Logo" className="nav-logo" /></a>
+                <a href="#hero-section"><img src= {transparentLogo} alt="Website Logo" className="nav-logo" /></a>
                  </div>
                  <div className="nav-social-icons">
                     <a href="https://github.com/zaidhanif1" target="_blank" className="nav-git"><FaGithub/> GitHub</a>

@@ -10,6 +10,7 @@
     left: 0;
     right: 0;
     z-index: 1;
+    backdrop-filter: blur(1px);
 }
 
 
@@ -33,6 +34,10 @@ a
 .nav-logo:hover
 {
     transform: scale(1.1);
+}
+.nav-logo:active
+{
+    transform: scale(.95);
 }
 
 

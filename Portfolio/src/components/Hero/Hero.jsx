@@ -1,16 +1,21 @@
-import "./Body.css"
+import "./Hero.css"
 import zaid from '../../assets/z.JPG'
 
 export default function Body()
 {
+    const scrollToProjects = (e) => {
+        e.preventDefault();
+        const projectsSection = document.getElementById('byte-bistro-div');
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return(
         <main>
-        <div className="hero-section">
+        <div id="hero-section">
        <h1>Hi, I'm Zaid.</h1>
         <h3>Computer Science student building clean, responsive web apps.</h3>
-        <button className="view-my-work-btn">View My Work</button>
-        <a href="../../../public/Zaid Resume.pdf" target="_blank"><button className="resume-btn"  >Resume</button></a>
-        
+        <a href="#" onClick={scrollToProjects} className="view-my-work-btn">View My Work</a>
+        <a href="/Zaid Resume.pdf" target="_blank" className="resume-btn">Resume</a>
         </div>
         <div>
         {/* <img src={zaid} alt="Zaid Professional Picture" className="zaid-img" /> */}
@@ -28,4 +33,5 @@ export default function Body()
 
         </main>
         
-)}
+    )
+}

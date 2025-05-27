@@ -1,0 +1,85 @@
+#byte-bistro-div
+{
+    max-width: 1200px;
+    margin: 300px auto;
+    padding: 0 20px;
+}
+
+.bytebistro-h1
+{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e2e8f0;
+    text-align: center;
+}
+
+.byte-bistro-images
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+
+.byte-bistro-one,
+.byte-bistro-two
+{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.byte-bistro-one:hover,
+.byte-bistro-two:hover
+{
+    transform: translateY(-5px);
+}
+
+.bytebistro-desc
+{
+    background-color: #0f172a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: #e2e8f0;
+    line-height: 1.6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px)
+{
+    .byte-bistro-images
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bytebistro-desc
+    {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 767px)
+{
+    #byte-bistro-div
+    {
+        margin: 50px auto;
+    }
+    
+    .bytebistro-h1
+    {
+        font-size: 2rem;
+    }
+    
+    .byte-bistro-one,
+    .byte-bistro-two
+    {
+        margin: 0 auto;
+    }
+}
+
