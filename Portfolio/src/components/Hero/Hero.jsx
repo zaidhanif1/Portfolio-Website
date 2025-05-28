@@ -1,5 +1,5 @@
 import "./Hero.css"
-import zaid from '../../assets/z.JPG'
+import zaid from '../../assets/logos/z.JPG'
 
 export default function Body()
 {

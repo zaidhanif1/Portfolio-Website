@@ -2,14 +2,29 @@ import './Footer.css'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import logo from '../../assets/logo-white.png'
+import logo from '../../assets/logos/logo-white.png'
+import transparentLogo from "../../assets/logos/logo-white.png"
+
 
 export default function Footer()
 {
+
+
+    const footerToNav = (e) => {
+    e.preventDefault()
+    const navSection = document.getElementById("hero-section")
+    navSection.scrollIntoView({
+        behavior: 'smooth'
+    })
+}
+
+
     return(
         <footer>
             <div className='footer-logo'>
-                <img src={logo} alt="Logo on Footer" className='footer-logo-img'/>
+                    <button onClick = {footerToNav} className="footer-logo-btn" >
+                        <img src={transparentLogo}  className = 'footer-logo-img'  alt="Website Logo" />
+                        </button>
             </div>
             <div className='footer-about'>
                 <h3>About</h3>

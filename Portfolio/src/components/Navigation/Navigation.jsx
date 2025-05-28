@@ -1,6 +1,5 @@
-import profilePic from "../../assets/z.JPG"
-import transparentLogo from "../../assets/logo-white.png"
-import logo from '../../assets/Logo.png'
+import profilePic from "../../assets/logos/z.JPG"
+import transparentLogo from "../../assets/logos/logo-white.png"
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
@@ -8,15 +7,18 @@ import "./Navigation.css"
 
 export default function Navigation()
 {
-    function removeTag(e)
-    {
-        e.preventDefault()
-        
-    }
+   
+const scrollToNav = (e) => {
+    e.preventDefault()
+    const navSection = document.getElementById("hero-section")
+    navSection.scrollIntoView({
+        behavior: 'smooth'
+    })
+}
     return(
             <nav className="navigation-container">
-                <div logo-container>
-                <a href="#hero-section"><img src= {transparentLogo} alt="Website Logo" className="nav-logo" /></a>
+                <div className="logo-container">
+                    <button onClick = {scrollToNav} ><img src={transparentLogo}  className="nav-logo" alt="Website Logo" /></button>
                  </div>
                  <div className="nav-social-icons">
                     <a href="https://github.com/zaidhanif1" target="_blank" className="nav-git"><FaGithub/> GitHub</a>

@@ -1,7 +1,8 @@
 import Navigation from "./components/Navigation/Navigation.jsx"
 import Footer from './components/Footer/Footer.jsx'
 import Body from './components/Hero/Hero.jsx'
-import Projects from './components/Projects/Projects.jsx'
+import ByteBistro from './components/Projects/ByteBistro.jsx'
+import BarberBooking from './components/Projects/BarberBooking.jsx'
 
 export default function App()
 {
@@ -9,7 +10,8 @@ export default function App()
     <>
     <Navigation />
     <Body />
-    <Projects />
+    <ByteBistro />
+    <BarberBooking />
     <Footer />
     </>
   )

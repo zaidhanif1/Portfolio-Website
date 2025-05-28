@@ -23,6 +23,14 @@ a
 
 
 /* logo  -------------------------- */
+.logo-container > button 
+{
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 
 .nav-logo
 {
@@ -30,6 +38,7 @@ a
     border-radius: 50%;
     transition: 0.3s ease;
     margin-left: 20px;
+    
 }
 .nav-logo:hover
 {

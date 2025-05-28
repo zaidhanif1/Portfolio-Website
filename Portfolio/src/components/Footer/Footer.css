@@ -13,26 +13,6 @@ footer
 
 }
 
-.footer-logo
-{
- 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.footer-logo-img
-{
-    width: 50px;
-    border-radius: 50%;
-    transition: 0.3s ease;
-    margin-left: 20px;
-}
-
-.footer-logo-img:hover
-{
-    transform: scale(1.05);
-
-}
 
 .footer-about > p
 {
@@ -72,3 +52,32 @@ footer
 }
 
 /* social links ---------------------------- */
+
+
+
+/* footer logo------------------------------ */
+
+.footer-logo-btn
+{
+    background: transparent;
+    border: none;
+    padding: 0;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.footer-logo-btn:hover
+{
+    transform: scale(1.05);
+}
+.footer-logo-btn:active
+{
+    transform: scale(.95);
+}
+
+.footer-logo-img
+{
+    width: 50px;
+
+}

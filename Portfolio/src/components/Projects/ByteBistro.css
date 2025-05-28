@@ -1,24 +1,42 @@
 #byte-bistro-div
 {
-    max-width: 1200px;
-    margin: 300px auto;
+    max-width: 1400px;
+    margin: 500px auto 300px auto;
     padding: 0 20px;
+}
+
+.projects-header
+{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.projects-header > h1
+{
+      font-size: 4rem;
+      margin-bottom: 0px;
+}
+.projects-header > p
+{
+
 }
 
 .bytebistro-h1
 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
     color: #e2e8f0;
+    margin: 2rem auto auto auto;
     text-align: center;
+
+    grid-column: 1 / -1;
+
+
 }
 
-.byte-bistro-images
+.byte-bistro-project
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    position: relative;
 }
 
 .byte-bistro-one,
@@ -35,6 +53,7 @@
 .byte-bistro-two:hover
 {
     transform: translateY(-5px);
+    
 }
 
 .bytebistro-desc
@@ -44,16 +63,18 @@
     border-radius: 12px;
     color: #e2e8f0;
     line-height: 1.6;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+    box-shadow: .5px .5px 1px white;
+    margin: 1rem auto auto auto;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
+
+/* begin on grid MDN Docs*/
+
 
 @media (min-width: 768px)
 {
-    .byte-bistro-images
+    .byte-bistro-project
     {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -80,6 +101,10 @@
     .byte-bistro-two
     {
         margin: 0 auto;
+    }
+    .bytebistro-desc
+    {
+        grid-column: 1 / -1;
     }
 }
 
