@@ -7,24 +7,23 @@ export default function BarberBooking()
 {
     return(
             <div className="barber-website-div">
-                <div className="barber-images">
-                    <img className="barber-img-one" src={barberImgOne} alt="Appointment Booking Site Project ScreenShot One" />
-                    <img className="barber-img-two" src={barberImgTwo} alt="Appointment Booking Site Project ScreenShot Two" />
-
-                </div>
-                <div className="barber-p">
+                    <a target = '_blank' href="https://zcutz.netlify.app/">
+                    <img className="barber-img-one" src={barberImgOne} 
+                    alt="Appointment Booking Site Project ScreenShot One" />
+                    </a>
+                    <a target = '_blank' href="https://zcutz.netlify.app/">
+                    <img className="barber-img-two" src={barberImgTwo} 
+                    alt="Appointment Booking Site Project ScreenShot Two" />
+                     </a>
+                    <h1 className = 'barber-header'>ZCutz</h1>
                     <p className="barber-desc"> 
-                    ZCutz was a foundational project built while I was learning the
-                    basics of HTML, CSS, and JavaScript. 
-                    It includes a contact form that initially used
-                    various &lt;input&gt; types and integrated EmailJS to handle 
-                    submissions via a button click. However, to improve functionality and user experience,
-                    I ultimately embedded a prebuilt form application into the page.  
-                     </p>
-                </div>
-
-
-
+                    ZCutz was a project I built
+                    while learning the fundamentals
+                    of web developement. Embedding cal.com, I 
+                    created an appointment booking site.  
+                    It taught me the value of clean, 
+                    well-documented code and introduced
+                    me to the power of leveraging open-source tools.</p>
             </div>
 
     )

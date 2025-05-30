@@ -1,41 +1,42 @@
 .barber-website-div
 {
-    margin: auto auto 300px auto;
-    width: 1400px;    
-
-}
-
-.barber-images
-{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1400px;
+    margin: auto;
     display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 2rem;
-
 }
+
 .barber-img-one, .barber-img-two
 {
+    
     width: 100%;
     border-radius: 12px;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
+    height: auto;
 }
 
-.barber-img-one:hover, .barber-img-two:hover
+.barber-img-one:hover,
+.barber-img-two:hover
 {
     transform: translateY(-5px);
 }
 
 
-.barber-p
+.barber-header
 {
-    margin: 0px auto 0px auto;
+    grid-column: 1/-1;
+    margin: 1rem auto auto auto;
+    font-size: 2.5rem;
 }
 .barber-desc
 {
-    width: 600px;
+    max-width: 600px;
     border-radius: 12px;
     line-height: 1.5rem;
-    padding: 1.5rem;
+    padding: 1.6rem;
     box-shadow: .5px .5px 1px white;
-    margin: 2rem auto auto auto;
-
+    text-align: center;
+    margin: auto auto 4rem auto;
+    grid-column: 1 / -1;    
 }

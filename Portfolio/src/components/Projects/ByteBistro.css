@@ -1,7 +1,7 @@
 #byte-bistro-div
 {
     max-width: 1400px;
-    margin: 500px auto 300px auto;
+    margin: auto auto 200px auto;
     padding: 0 20px;
 }
 
@@ -15,9 +15,14 @@
       font-size: 4rem;
       margin-bottom: 0px;
 }
-.projects-header > p
-{
+/*end project section header -------------------*/
 
+
+.byte-bistro-project
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .bytebistro-h1
@@ -26,17 +31,9 @@
     color: #e2e8f0;
     margin: 2rem auto auto auto;
     text-align: center;
-
     grid-column: 1 / -1;
 
 
-}
-
-.byte-bistro-project
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
 }
 
 .byte-bistro-one,
@@ -62,14 +59,16 @@
     padding: 1.5rem;
     border-radius: 12px;
     color: #e2e8f0;
-    line-height: 1.6;
+    line-height: 1.6rem;
     box-shadow: .5px .5px 1px white;
     margin: 1rem auto auto auto;
     max-width: 600px;
+    grid-column: 1/-1;
 
 }
 
-/* begin on grid MDN Docs*/
+/*end byte-bistro project section  -------------------*/
+
 
 
 @media (min-width: 768px)

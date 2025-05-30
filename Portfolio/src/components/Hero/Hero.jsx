@@ -16,10 +16,8 @@ export default function Body()
         <h3>Computer Science student building clean, responsive web apps.</h3>
         <a href="#" onClick={scrollToProjects} className="view-my-work-btn">View My Work</a>
         <a href="/Zaid Resume.pdf" target="_blank" className="resume-btn">Resume</a>
-        </div>
-        <div>
-        {/* <img src={zaid} alt="Zaid Professional Picture" className="zaid-img" /> */}
-        </div>
+
+
         <div className="about-section">
             <p>Junior at West Virginia University 
                     majoring in Computer Science and minoring in Physics. 
@@ -30,6 +28,7 @@ export default function Body()
                     expanding my skill set through hands-on projects and internships.
             </p>
         </div>
+                </div>
 
         </main>
         
