@@ -14,9 +14,10 @@ export default function Body()
         <div id="hero-section">
        <h1>Hi, I'm Zaid.</h1>
         <h3>Computer Science student building clean, responsive web apps.</h3>
+        <div className="hero-buttons">
         <a href="#" onClick={scrollToProjects} className="view-my-work-btn">View My Work</a>
         <a href="/Zaid Resume.pdf" target="_blank" className="resume-btn">Resume</a>
-
+        </div>  
 
         <div className="about-section">
             <p>Junior at West Virginia University 

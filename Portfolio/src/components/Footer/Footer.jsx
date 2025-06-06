@@ -17,6 +17,20 @@ export default function Footer()
         behavior: 'smooth'
     })
 }
+const compatibilityCheck = (e) => {
+        e.preventDefault()
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+        
+        if (isMobile)
+        {
+            window.location.href = 'mailto:zah00005@mix.wvu.edu'
+        }
+        else
+        {
+            window.open('https://mail.google.com/mail/?view=cm&fs=1&to=zah00005@mix.wvu.edu', '_blank')
+        }
+    }
+
 
 
     return(
@@ -38,7 +52,7 @@ export default function Footer()
                     <div className="social-links">
                         <a href="https://github.com/zaidhanif1" target='_blank' className='footer-git'>{<FaGithub />} GitHub</a>
                         <a href="https://www.linkedin.com/in/zaidhanif/" target='_blank' className='footer-linkedin'>{<FaLinkedin/>} LinkedIn</a>
-                            <a href="mailto:zah00005@mix.wvu.edu" className= "footer-email" target='_blank'>{<MdEmail />} Email</a>
+                        <a href="mailto:zah00005@mix.wvu.edu" className="footer-email" onClick={compatibilityCheck}>{<MdEmail />} Email</a>
                     </div>
                 </div>  
         </footer>

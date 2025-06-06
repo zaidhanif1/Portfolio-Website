@@ -1,7 +1,8 @@
 .barber-website-div
 {
+    
     max-width: 1400px;
-    margin: auto;
+    margin: auto 20px 200px 20px;
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 2rem;
@@ -14,6 +15,8 @@
     border-radius: 12px;
     transition: transform 0.3s ease;
     height: auto;
+    margin: auto;
+    
 }
 
 .barber-img-one:hover,
@@ -39,4 +42,12 @@
     text-align: center;
     margin: auto auto 4rem auto;
     grid-column: 1 / -1;    
+}
+@media (max-width: 768px)
+{
+    .barber-website-div
+    {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        width: 60px;
+    }
 }

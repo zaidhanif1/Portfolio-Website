@@ -6,7 +6,6 @@
     background-color: transparent;
     justify-content: space-between;
     position: fixed;   
-    width: 100%;
     left: 0;
     right: 0;
     z-index: 1;
@@ -88,3 +87,24 @@ a
 
 
 /* social icons -------------------------- */
+
+
+
+
+/* @media quieries ------------------------*/
+
+@media (max-width: 768px)
+{
+    .navigation-container
+    {
+        font-size: .7rem;
+
+    }
+    .nav-logo
+    {
+        width: 40px;
+    }
+
+
+    
+}

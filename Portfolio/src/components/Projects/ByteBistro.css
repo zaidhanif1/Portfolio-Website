@@ -71,39 +71,19 @@
 
 
 
-@media (min-width: 768px)
+@media (max-width: 768px)
 {
-    .byte-bistro-project
-    {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .bytebistro-desc
-    {
-        grid-column: 1 / -1;
-    }
-}
 
-@media (max-width: 767px)
-{
     #byte-bistro-div
     {
-        margin: 50px auto;
+        width: 60%;
+        font-size: 30px;
+
     }
-    
-    .bytebistro-h1
+    .byte-bistro-project  
     {
-        font-size: 2rem;
-    }
-    
-    .byte-bistro-one,
-    .byte-bistro-two
-    {
-        margin: 0 auto;
-    }
-    .bytebistro-desc
-    {
-        grid-column: 1 / -1;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        width: 60%;
+        font-size: 1rem;
     }
 }
-

@@ -1,5 +1,6 @@
 #hero-section
 {
+    width: clamp(200px, 100%, 100%);
     margin-top: 100px;
     animation: fadeIn 1s ease-in-out forwards;
     transition: 0.5s ease;
@@ -8,52 +9,43 @@
     height: 100vh;
 }
 
-#hero-section h1
+#hero-section > h1
 {
     font-size: 5rem;
     font-weight: 600;
 }
 
-#hero-section h3
+#hero-section > h3
 {
     font-size: 2rem;
     font-weight: 400;
 }
 
-
-.view-my-work-btn
+.hero-buttons
 {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #121212;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
+    display: flex;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    cursor: pointer;
     font-weight: 600;
-    animation: fadeIn 1s ease-in-out forwards;
     text-decoration: none;
 }
+
+.view-my-work-btn,
 .resume-btn
 {
-    display: inline-block;
-    margin-left: 20px;
+    margin: auto 10px;
     background-color: #ffffff;
     color: #121212;
     padding: 10px 15px;
     border-radius: 5px;
     border: none;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     transition: all 0.3s ease;
     cursor: pointer;
-    font-weight: 600;
     animation: fadeIn 1s ease-in-out forwards;
-    text-decoration: none;
+    width: 135px;
 }
+
 
 .view-my-work-btn:hover,
 .resume-btn:hover {
@@ -90,7 +82,7 @@
     padding: 0 1rem;
 
 }
-.about-section p {
+.about-section > p {
     max-width: 600px;
     word-break: break-word;
     animation: fadeIn 1s ease-in-out forwards;
@@ -106,5 +98,40 @@
     to
     {
         opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px)
+{
+    #hero-section
+    {
+        height: 80vh;
+    }
+    #hero-section > h1
+    {
+        font-size: 2.3rem;
+    }
+    .view-my-work-btn
+    {
+        font-size: 1rem;
+    }
+    #hero-section > h3
+    {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .about-section > p
+    {
+        font-size: .7rem;
+    }
+
+    .view-my-work-btn,
+    .resume-btn
+    {
+        font-size: .5rem;
+        width: 70px;
+
     }
 }
