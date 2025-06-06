@@ -28,6 +28,9 @@ export default function Footer()
             </div>
             <div className='footer-about'>
                 <h3>About</h3>
+                <p className = 'footer-p'>Specializing in React and Node.js. Passionate about learning and 
+                    consistent improvment. 
+                </p>
                 
             </div>
             <div className='footer-socials'>
@@ -35,6 +38,7 @@ export default function Footer()
                     <div className="social-links">
                         <a href="https://github.com/zaidhanif1" target='_blank' className='footer-git'>{<FaGithub />} GitHub</a>
                         <a href="https://www.linkedin.com/in/zaidhanif/" target='_blank' className='footer-linkedin'>{<FaLinkedin/>} LinkedIn</a>
+                            <a href="mailto:zah00005@mix.wvu.edu" className= "footer-email" target='_blank'>{<MdEmail />} Email</a>
                     </div>
                 </div>  
         </footer>
