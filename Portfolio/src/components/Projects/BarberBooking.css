@@ -2,7 +2,7 @@
 {
     
     max-width: 1400px;
-    margin: auto 20px 200px 20px;
+    margin: auto auto 150px auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 2rem;
@@ -47,7 +47,15 @@
 {
     .barber-website-div
     {
-        grid-template-columns: repeat(1, minmax(300px, 1fr));
-        width: 60px;
+        grid-template-columns: repeat(1, minmax(250px, 500px));
+        
+    }
+    .barber-header
+    {
+        font-size: 2rem;
+    }
+    .barber-desc
+    {
+        font-size: .85rem;
     }
 }

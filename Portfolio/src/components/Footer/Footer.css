@@ -93,3 +93,23 @@ footer
     width: 50px;
 
 }
+
+@media (max-width: 768px)
+{
+    .footer-about > h3
+    {
+        font-size: 1rem;
+    }
+    .footer-about > p
+    {
+        font-size: .75rem;
+    }
+    .social-links
+    {
+        font-size: .75rem;
+    }
+    .footer-logo
+    {
+        width: 40px;
+    }
+}

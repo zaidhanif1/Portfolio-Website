@@ -7,6 +7,7 @@ export default function BarberBooking()
 {
     return(
             <div className="barber-website-div">
+                <h1 className = 'barber-header'>ZCutz</h1>
                     <a target = '_blank' href="https://zcutz.netlify.app/">
                     <img className="barber-img-one" src={barberImgOne} 
                     alt="Appointment Booking Site Project ScreenShot One" />
@@ -15,7 +16,7 @@ export default function BarberBooking()
                     <img className="barber-img-two" src={barberImgTwo} 
                     alt="Appointment Booking Site Project ScreenShot Two" />
                      </a>
-                    <h1 className = 'barber-header'>ZCutz</h1>
+                    
                     <p className="barber-desc"> 
                     ZCutz was a project I built
                     while learning the fundamentals

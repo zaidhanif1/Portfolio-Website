@@ -14,13 +14,14 @@ export default function Projects()
 
 
     <div className='byte-bistro-project'>
+        <h1 className='bytebistro-h1'>ByteBistro</h1>
         <a href="https://bytebistro.netlify.app/" target='_blank'>
         <img src={byteBistroOne} alt="ByteBistro Project Image One" className='byte-bistro-one' />
         </a>
         <a href="https://bytebistro.netlify.app/" target='_blank'>
         <img src={byteBistroTwo} alt="ByteBistro Project Image Two" className='byte-bistro-two' /> 
         </a>
-        <h1 className='bytebistro-h1'>ByteBistro</h1>
+        
         <p className='bytebistro-desc'>
             ByteBistro was a project that was created to 
             practice useState(), props, API calling, and 

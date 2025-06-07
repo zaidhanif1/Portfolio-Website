@@ -74,16 +74,21 @@
 @media (max-width: 768px)
 {
 
-    #byte-bistro-div
+    .projects-header > h1
     {
-        width: 60%;
-        font-size: 30px;
-
+        font-size: 2rem;
     }
     .byte-bistro-project  
     {
-        grid-template-columns: repeat(1, minmax(300px, 1fr));
-        width: 60%;
-        font-size: 1rem;
+       grid-template-columns: repeat(1, minmax(250px,500px));
+       gap: 2rem;
+    }
+    .bytebistro-h1
+    {
+        font-size: 2rem;
+    }
+    .bytebistro-desc
+    {
+        font-size: .85rem;
     }
 }
