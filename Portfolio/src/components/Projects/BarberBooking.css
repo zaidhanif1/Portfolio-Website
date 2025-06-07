@@ -4,6 +4,7 @@
     max-width: 1400px;
     margin: auto auto 150px auto;
     display: grid;
+    padding: 0 20px;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 2rem;
 }
@@ -48,6 +49,7 @@
     .barber-website-div
     {
         grid-template-columns: repeat(1, minmax(250px, 500px));
+        
         
     }
     .barber-header
