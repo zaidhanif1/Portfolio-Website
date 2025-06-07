@@ -18,13 +18,11 @@ export default function BarberBooking()
                      </a>
                     
                     <p className="barber-desc"> 
-                    ZCutz was a project I built
-                    while learning the fundamentals
-                    of web developement. Embedding cal.com, I 
-                    created an appointment booking site.  
-                    It taught me the value of clean, 
-                    well-documented code and introduced
-                    me to the power of leveraging open-source tools.</p>
+                    ZCutz is a static HTML/CSS/JS booking site that embeds Cal.com’s 
+                    widget so users pick a slot and get email confirmations. 
+                    I used semantic markup, BEM-style class names, and ES6 modules 
+                    for modular, readable code—learning how consistent naming, clear comments, 
+                    and open-source embeds turn a simple site into a responsive and functional project.</p>
             </div>
 
     )

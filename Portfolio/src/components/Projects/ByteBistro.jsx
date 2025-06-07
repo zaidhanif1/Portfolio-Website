@@ -8,7 +8,7 @@ export default function Projects()
     return(
 <div id='byte-bistro-div'>
     <div className='projects-header'>
-    <h1> Solo Projects Created</h1>
+    <h1> Solo Projects</h1>
     <p>No better way to improve than with hands on coding</p>
     </div>
 
@@ -23,10 +23,12 @@ export default function Projects()
         </a>
         
         <p className='bytebistro-desc'>
-            ByteBistro was a project that was created to 
-            practice useState(), props, API calling, and 
-            mapping in React. An input box takes in ingredients which is mapped
-            onto a list element and sent to Gemini AI to generate the recipe.
+           ByteBistro is a React app that transforms any list of ingredients 
+           into a fully formatted, AI-generated, recipe; complete with ingredient breakdown,
+            prep & cook times, and step-by-step instructions. It leverages React hooks 
+            (useState) and prop-driven components for a dynamic UI, with a Netlify Function
+             routing your input to the Gemini API.
+            I’m currently refining backend error handling for edge-case resilience.
 
         </p>
     </div>

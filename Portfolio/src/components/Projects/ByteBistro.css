@@ -61,12 +61,14 @@
     border-radius: 12px;
     color: #e2e8f0;
     line-height: 1.6rem;
-    box-shadow: .5px .5px 1px white;
+    box-shadow: 1px 1px 1px white;
     margin: 1rem auto auto auto;
     max-width: 600px;
     grid-column: 1/-1;
+    transition: color 0.3s ease;
 
 }
+
 
 /*end byte-bistro project section  -------------------*/
 
