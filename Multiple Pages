@@ -1,9 +1,0 @@
-import { useEffect } from "react"
-
-export default function Projects() {
-  useEffect(() => {
-    document.title = "Zaid | Projects"
-  }, [])
-
-  return <h1>My Projects</h1>
-}

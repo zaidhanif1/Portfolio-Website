@@ -23,12 +23,13 @@ export default function Projects()
         </a>
         
         <p className='bytebistro-desc'>
-           ByteBistro is a React app that transforms any list of ingredients 
-           into a fully formatted, AI-generated, recipe; complete with ingredient breakdown,
-            prep & cook times, and step-by-step instructions. It leverages React hooks 
-            (useState) and prop-driven components for a dynamic UI, with a Netlify Function
-             routing your input to the Gemini API.
-            I’m currently refining backend error handling for edge-case resilience.
+        ByteBistro is a React-based web app that converts 
+        any list of ingredients into a fully formatted, AI-generated recipe. 
+        It includes a complete ingredient breakdown, prep and cook times, 
+        and detailed step-by-step instructions. The frontend uses React 
+        hooks (useState) and prop-driven components for a dynamic UI. 
+        I created an Express server on the backend to securely manage and proxy the AI API key. 
+           
 
         </p>
     </div>
