@@ -1,6 +1,6 @@
 import './ByteBistro.css'
-import byteBistroOne from '../../assets/bytebistro/ByteBistro-One.png'
-import byteBistroTwo from '../..//assets/bytebistro/ByteBistro-Two.png'
+import byteBistroOne from '../../assets/bytebistro/byteBistroOne.png'
+import byteBistroTwo from '../..//assets/bytebistro/byteBistroTwo.png'
 import ReactMarkdown from 'react-markdown'
 
 export default function Projects()
@@ -26,9 +26,9 @@ export default function Projects()
         ByteBistro is a React-based web app that converts 
         any list of ingredients into a fully formatted, AI-generated recipe. 
         It includes a complete ingredient breakdown, prep and cook times, 
-        and detailed step-by-step instructions. The frontend uses React 
-        hooks (useState) and prop-driven components for a dynamic UI. 
-        I created an Express server on the backend to securely manage and proxy the AI API key. 
+        and detailed step-by-step instructions. The front end was created
+        with React, Express for the server, and PostgreSQL for the database.
+         
            
 
         </p>

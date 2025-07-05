@@ -2,9 +2,9 @@
 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: .5rem;
     background-color: transparent;
-    justify-content: space-between;
     position: fixed;   
     left: 0;
     right: 0;
@@ -54,14 +54,17 @@ a
 
 
 /* social icons -------------------------- */
-.nav-social-icons
+#nav-social-icons
 {
     display: flex;
     margin-right: 20px;
     transition: transform 0.3s ease;
 
 }
-
+.icon
+{
+    visibility: hidden;    
+}
 .nav-git
 {
     margin-right: 20px;
@@ -95,10 +98,22 @@ a
 
 @media (max-width: 768px)
 {
+    .icon{
+    visibility:  visible;
+    }
+
+    #nav-social-icon.visible
+    {
+        display: flex;
+        flex-direction: column;
+    }
     .navigation-container
     {
         font-size: .7rem;
 
+    }
+    .nav-git, .nav-linkedin{
+    display: none;        
     }
     .nav-logo
     {

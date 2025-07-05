@@ -42,7 +42,7 @@ const compatibilityCheck = (e) => {
             </div>
             <div className='footer-about'>
                 <h3>About</h3>
-                <p className = 'footer-p'>Specializing in React and Node.js. Passionate about learning and 
+                <p className = 'footer-p'>Specializing in React, Express, SQL, and PostgreSQL. Passionate about learning and 
                     consistent improvment. 
                 </p>
                 
