@@ -1,8 +1,6 @@
-import profilePic from "../../assets/logos/z.JPG"
 import transparentLogo from "../../assets/logos/logo-white.png"
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
 import { FaBars } from 'react-icons/fa'
 import "./Navigation.css"
 
@@ -18,10 +16,6 @@ const scrollToNav = (e) => {
     })
 }
 
-function scrollTo (e) {
-    e.preventDefault
-    const theElement = document.getElementById('element')
-}
 const hamburgDisplay = () => {
     const navSocial = document.getElementById('nav-social-icons')
     navSocial.classList.toggle('visible')
@@ -36,12 +30,12 @@ const hamburgDisplay = () => {
             
                 <div>  
                     <div id="nav-social-icons">
-                    <a href="https://github.com/zaidhanif1" target="_blank" className="nav-git"><FaGithub/> GitHub</a>
-                    <a href="https://www.linkedin.com/in/zaidhanif/" target='_blank' className="nav-linkedin">{<FaLinkedin/>} LinkedIn</a>
+                    <a href="https://github.com/zaidhanif1" target="_blank" rel="noreferrer" className="nav-git"><FaGithub/> GitHub</a>
+                    <a href="https://www.linkedin.com/in/zaidhanif/" target='_blank' rel="noreferrer" className="nav-linkedin"><FaLinkedin/> LinkedIn</a>
                     </div>
-                    <a className="icon" onClick={hamburgDisplay}>
+                    <button className="icon" onClick={hamburgDisplay} aria-label="Toggle social links">
                     <FaBars />
-                    </a>
+                    </button>
                  
                  </div>
 
