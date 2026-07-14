@@ -2,10 +2,11 @@ import './Footer.css'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import logo from '../../assets/logos/logo-white.png'
 import transparentLogo from "../../assets/logos/logo-white.png"
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+
+const MotionFooter = motion.footer
 
 export default function Footer()
 {
@@ -37,7 +38,7 @@ export default function Footer()
     }
 
     return(
-        <motion.footer
+        <MotionFooter
             ref={ref}
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -51,17 +52,17 @@ export default function Footer()
             <div className='footer-about'>
                 <h3>About</h3>
                 <p className='footer-p'>
-                    Specializing in React, Express, SQL, and PostgreSQL. Passionate about learning and 
-                    consistent improvement. 
+                    Building across Python AI tooling, React/TypeScript products, SQL-backed APIs,
+                    and low-level C systems work.
                 </p>
             </div>
             <div className='footer-socials'>
                 <h3>Socials</h3>
                 <div className="social-links">
-                    <a href="https://github.com/zaidhanif1" target='_blank' className='footer-git'>
+                    <a href="https://github.com/zaidhanif1" target='_blank' rel="noreferrer" className='footer-git'>
                         <FaGithub /> GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/zaidhanif/" target='_blank' className='footer-linkedin'>
+                    <a href="https://www.linkedin.com/in/zaidhanif/" target='_blank' rel="noreferrer" className='footer-linkedin'>
                         <FaLinkedin/> LinkedIn
                     </a>
                     <a href="mailto:zah00005@mix.wvu.edu" className="footer-email" onClick={compatibilityCheck}>
@@ -69,6 +70,6 @@ export default function Footer()
                     </a>
                 </div>
             </div>  
-        </motion.footer>
+        </MotionFooter>
     )
 }
