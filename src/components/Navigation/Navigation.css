@@ -64,6 +64,11 @@ a
 .icon
 {
     visibility: hidden;    
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
 }
 .nav-git
 {
@@ -102,10 +107,18 @@ a
     visibility:  visible;
     }
 
-    #nav-social-icon.visible
+    #nav-social-icons.visible
     {
         display: flex;
         flex-direction: column;
+        gap: .75rem;
+        position: absolute;
+        right: 1rem;
+        top: 3.75rem;
+        background: #171b1f;
+        border: 1px solid rgba(255, 255, 255, .14);
+        border-radius: 8px;
+        padding: .85rem;
     }
     .navigation-container
     {
@@ -114,6 +127,15 @@ a
     }
     .nav-git, .nav-linkedin{
     display: none;        
+    }
+
+    #nav-social-icons.visible .nav-git,
+    #nav-social-icons.visible .nav-linkedin
+    {
+        display: flex;
+        align-items: center;
+        gap: .35rem;
+        margin-right: 0;
     }
     .nav-logo
     {
