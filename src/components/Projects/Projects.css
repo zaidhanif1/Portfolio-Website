@@ -16,61 +16,82 @@
       font-size: 4rem;
       margin-bottom: 0px;
 }
+
+.projects-header > p
+{
+    color: #d1d5db;
+    margin: .75rem auto 0 auto;
+    max-width: 680px;
+}
 /*end project section header -------------------*/
 
-
-.byte-bistro-project
+.featured-grid
 {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin: 2.5rem 0 0 0;
+    text-align: left;
 }
 
-.bytebistro-h1
+.featured-card
 {
-    font-size: 2.5rem;
-    color: #e2e8f0;
-    margin: 2rem auto auto auto;
-    text-align: center;
-    grid-column: 1 / -1;
-
-
+    background: #171b1f;
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 8px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .18);
+    color: #e6edf0;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    padding: 1.35rem;
 }
 
-.byte-bistro-one,
-.byte-bistro-two
+.featured-eyebrow
 {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    color: #52d6e8;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 0 0 .7rem 0;
+    text-transform: uppercase;
 }
 
-.byte-bistro-one:hover,
-.byte-bistro-two:hover
+.featured-card h2
 {
-    transform: translateY(-5px);
-    
+    font-size: 1.65rem;
+    line-height: 1.1;
+    margin: 0;
 }
 
-.bytebistro-desc
+.featured-meta
 {
-    background-color: #0f172a;
-    padding: 1.5rem;
-    border-radius: 12px;
-    color: #e2e8f0;
-    line-height: 1.6rem;
-    box-shadow: 1px 1px 1px white;
-    margin: 1rem auto auto auto;
-    max-width: 600px;
-    grid-column: 1/-1;
-    transition: color 0.3s ease;
-
+    color: #8b3d9b;
+    font-size: .86rem;
+    font-weight: 600;
+    line-height: 1.45;
+    margin: .85rem 0;
 }
 
+.featured-description
+{
+    color: #e5e7eb;
+    line-height: 1.55;
+    margin: 0 0 1rem 0;
+}
 
-/*end byte-bistro project section  -------------------*/
+.featured-card ul
+{
+    color: #d1d5db;
+    line-height: 1.5;
+    margin: auto 0 0 0;
+    padding-left: 1.1rem;
+}
+
+.featured-card li + li
+{
+    margin-top: .7rem;
+}
 
 
 
@@ -81,17 +102,22 @@
     {
         font-size: 2rem;
     }
-    .byte-bistro-project  
+    .featured-grid
     {
-       grid-template-columns: repeat(1, minmax(250px,500px));
-       gap: 2rem;
+        grid-template-columns: 1fr;
+        margin: 2rem 0 3rem 0;
     }
-    .bytebistro-h1
+
+    .featured-card
     {
-        font-size: 2rem;
+        min-height: auto;
     }
-    .bytebistro-desc
+}
+
+@media (min-width: 769px) and (max-width: 1100px)
+{
+    .featured-grid
     {
-        font-size: .85rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
