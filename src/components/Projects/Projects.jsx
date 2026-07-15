@@ -1,4 +1,4 @@
-import './ByteBistro.css'
+import './Projects.css'
 
 const featuredWork = [
     {
