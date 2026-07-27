@@ -47,13 +47,41 @@
     padding: 1.35rem;
 }
 
+.featured-card--live
+{
+    border-color: rgba(82, 214, 232, .45);
+}
+
+.featured-card-top
+{
+    align-items: center;
+    display: flex;
+    gap: .65rem;
+    justify-content: space-between;
+    margin: 0 0 .7rem 0;
+}
+
 .featured-eyebrow
 {
     color: #52d6e8;
     font-size: .75rem;
     font-weight: 700;
     letter-spacing: 0;
-    margin: 0 0 .7rem 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.live-tag
+{
+    background: rgba(34, 197, 94, .14);
+    border: 1px solid rgba(34, 197, 94, .45);
+    border-radius: 999px;
+    color: #86efac;
+    flex-shrink: 0;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    padding: .22rem .55rem;
     text-transform: uppercase;
 }
 
