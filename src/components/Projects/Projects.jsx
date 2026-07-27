@@ -1,4 +1,6 @@
 import './Projects.css'
+import { Link } from 'react-router-dom'
+import { FaArrowRight } from 'react-icons/fa'
 
 const featuredWork = [
     {
@@ -64,8 +66,11 @@ export default function FeaturedWork()
 
     <section className="featured-grid" aria-label="Featured resume work">
         {featuredWork.map((work) => (
-            <article className="featured-card" key={work.title}>
-                <p className="featured-eyebrow">{work.subtitle}</p>
+            <article className={`featured-card${work.live ? ' featured-card--live' : ''}`} key={work.title}>
+                <div className="featured-card-top">
+                    <p className="featured-eyebrow">{work.subtitle}</p>
+                    {work.live && <span className="live-tag">Live</span>}
+                </div>
                 <h2>{work.title}</h2>
                 <p className="featured-meta">{work.meta}</p>
                 <p className="featured-description">{work.description}</p>
@@ -74,6 +79,17 @@ export default function FeaturedWork()
                         <li key={bullet}>{bullet}</li>
                     ))}
                 </ul>
+                {work.projectPath && (
+                    <div className="featured-links">
+                        <Link
+                            className="featured-link featured-link--primary"
+                            to={work.projectPath}
+                        >
+                            View project
+                            <FaArrowRight aria-hidden="true" />
+                        </Link>
+                    </div>
+                )}
             </article>
         ))}
     </section>
