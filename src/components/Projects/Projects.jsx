@@ -2,6 +2,20 @@ import './Projects.css'
 
 const featuredWork = [
     {
+        title: 'ByteBistro',
+        subtitle: 'AI-powered recipe assistant',
+        meta: 'React, Express, PostgreSQL, Gemini, Hugging Face, Supabase',
+        description:
+            'Built a full-stack recipe assistant that turns available ingredients into generated recipes, food illustrations, and saved user history.',
+        bullets: [
+            'Integrated Google Gemini for recipe generation and Hugging Face Stable Diffusion for food illustrations.',
+            'Implemented JWT authentication, PostgreSQL persistence, and Supabase Storage caching for generated images.',
+            'Built responsive React UI states with theme switching, Framer Motion interactions, and accessibility-minded controls.'
+        ],
+        live: true,
+        projectPath: '/projects/bytebistro'
+    },
+    {
         title: 'Southwest Research Institute',
         subtitle: 'Software Engineering Intern',
         meta: 'Python, LangChain, SQLite, sqlite-vec, SQLAlchemy, Docker, Ollama',
@@ -35,18 +49,6 @@ const featuredWork = [
             'Implemented short-lived access tokens, 90-day refresh tokens, and server-side session revocation.',
             'Wrote streak logic that normalizes workout timestamps into unique calendar dates.',
             'Broke requirements into scoped Agile tasks and helped coordinate delivery across the team.'
-        ]
-    },
-    {
-        title: 'ByteBistro',
-        subtitle: 'AI-powered recipe assistant',
-        meta: 'React, Express, PostgreSQL, Gemini, Hugging Face, Supabase',
-        description:
-            'Built a full-stack recipe assistant that turns available ingredients into generated recipes, food illustrations, and saved user history.',
-        bullets: [
-            'Integrated Google Gemini for recipe generation and Hugging Face Stable Diffusion for food illustrations.',
-            'Implemented JWT authentication, PostgreSQL persistence, and Supabase Storage caching for generated images.',
-            'Built responsive React UI states with theme switching, Framer Motion interactions, and accessibility-minded controls.'
         ]
     }
 ]
