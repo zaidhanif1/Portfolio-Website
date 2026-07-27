@@ -1,16 +1,15 @@
-import Navigation from "./components/Navigation/Navigation.jsx"
-import Footer from './components/Footer/Footer.jsx'
-import Body from './components/Hero/Hero.jsx'
-import FeaturedWork from './components/Projects/Projects.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import ByteBistroPage from './pages/projects/ByteBistro.jsx'
 
 export default function App()
 {
-  return(
-    <>
-    <Navigation />
-    <Body />
-    <FeaturedWork />
-    <Footer />
-    </>
-  )
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects/bytebistro" element={<ByteBistroPage />} />
+            </Routes>
+        </BrowserRouter>
+    )
 }
