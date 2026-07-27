@@ -1,3 +1,4 @@
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import transparentLogo from "../../assets/logos/logo-white.png"
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
@@ -7,13 +8,17 @@ import "./Navigation.css"
 
 export default function Navigation()
 {
-   
-const scrollToNav = (e) => {
+    const location = useLocation()
+    const navigate = useNavigate()
+
+const goHome = (e) => {
     e.preventDefault()
-    const navSection = document.getElementById("hero-section")
-    navSection.scrollIntoView({
-        behavior: 'smooth'
-    })
+    if (location.pathname === '/') {
+        const navSection = document.getElementById("hero-section")
+        navSection?.scrollIntoView({ behavior: 'smooth' })
+        return
+    }
+    navigate('/')
 }
 
 const hamburgDisplay = () => {
@@ -24,7 +29,9 @@ const hamburgDisplay = () => {
     return(
             <nav className="navigation-container">
                 <div className="logo-container">
-                    <button onClick = {scrollToNav} ><img src={transparentLogo}  className="nav-logo" alt="Website Logo" /></button>
+                    <Link to="/" onClick={goHome} aria-label="Go to home">
+                        <img src={transparentLogo}  className="nav-logo" alt="Website Logo" />
+                    </Link>
                  </div>
 
             
