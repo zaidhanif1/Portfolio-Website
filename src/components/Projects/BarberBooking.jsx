@@ -18,7 +18,7 @@ export default function BarberBooking()
                      </a>
                     
                     <p className="barber-desc"> 
-                    ZCutz is a static HTML/CSS/JS booking site that embeds Cal.com’s 
+                    ZCutz is a static HTML/CSS/JS booking site that embeds Cal.com's 
                     widget so users pick a slot and get email confirmations. 
                     I used semantic markup, BEM-style class names, and ES6 modules 
                     for modular, readable code—learning how consistent naming, clear comments, 
