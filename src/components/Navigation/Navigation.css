@@ -22,10 +22,11 @@ a
 
 
 /* logo  -------------------------- */
-.logo-container > button 
+.logo-container > a
 {
     background: transparent;
     border: none;
+    display: inline-block;
     padding: 0;
     cursor: pointer;
 }
