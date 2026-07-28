@@ -4,6 +4,18 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const featuredWork = [
     {
+        title: 'Southwest Research Institute',
+        subtitle: 'Software Engineering Intern',
+        meta: 'Python, LangChain, SQLite, sqlite-vec, SQLAlchemy, Docker, Ollama',
+        description:
+            'Built a local RAG and semantic search prototype that chunks documentation, creates embeddings, stores searchable vectors, and returns top-k source matches for user queries.',
+        bullets: [
+            'Modeled documents, chunks, and vector embeddings with checksum-based deduplication.',
+            'Refactored ingestion, storage, and query flows into a modular QueryAPI with dataclasses, typed serialization, and structured logging.',
+            'Added Pydantic-powered environment and CLI configuration for containerized local workflows.'
+        ]
+    },
+    {
         title: 'ByteBistro',
         subtitle: 'AI-powered recipe assistant',
         meta: 'React, Express, PostgreSQL, Gemini, Hugging Face, Supabase',
@@ -18,18 +30,6 @@ const featuredWork = [
         projectPath: '/projects/bytebistro'
     },
     {
-        title: 'Southwest Research Institute',
-        subtitle: 'Software Engineering Intern',
-        meta: 'Python, LangChain, SQLite, sqlite-vec, SQLAlchemy, Docker, Ollama',
-        description:
-            'Built a local RAG and semantic search prototype that chunks documentation, creates embeddings, stores searchable vectors, and returns top-k source matches for user queries.',
-        bullets: [
-            'Modeled documents, chunks, and vector embeddings with checksum-based deduplication.',
-            'Refactored ingestion, storage, and query flows into a modular QueryAPI with dataclasses, typed serialization, and structured logging.',
-            'Added Pydantic-powered environment and CLI configuration for containerized local workflows.'
-        ]
-    },
-    {
         title: 'MPX Operating System',
         subtitle: 'Bare-metal x86 kernel',
         meta: 'C, x86 Assembly',
@@ -39,7 +39,8 @@ const featuredWork = [
             'Bootstrapped the GDT, IDT, PIC, and virtual memory paging with modeled RAM.',
             'Implemented cooperative multitasking with a custom assembly ISR that saves and restores register state.',
             'Built a first-fit heap allocator with block splitting and adjacent-block merging.'
-        ]
+        ],
+        projectPath: '/projects/mpx-os'
     },
     {
         title: 'Momentum',
@@ -51,7 +52,8 @@ const featuredWork = [
             'Implemented short-lived access tokens, 90-day refresh tokens, and server-side session revocation.',
             'Wrote streak logic that normalizes workout timestamps into unique calendar dates.',
             'Broke requirements into scoped Agile tasks and helped coordinate delivery across the team.'
-        ]
+        ],
+        projectPath: '/projects/momentum'
     }
 ]
 
