@@ -1,0 +1,12 @@
+.project-media--captioned
+{
+    flex-direction: column;
+}
+
+.project-media-caption
+{
+    color: #9ca3af;
+    font-size: .88rem;
+    line-height: 1.5;
+    margin-top: .7rem;
+}
