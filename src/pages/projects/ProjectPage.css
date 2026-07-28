@@ -1,0 +1,194 @@
+.project-page
+{
+    margin-top: 100px;
+    padding-bottom: 4rem;
+    text-align: left;
+}
+
+.project-page-inner
+{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.project-back
+{
+    align-items: center;
+    color: #d1d5db;
+    display: inline-flex;
+    font-size: .9rem;
+    font-weight: 600;
+    gap: .55rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.project-back:hover,
+.project-back:focus-visible
+{
+    color: #52d6e8;
+    outline: none;
+}
+
+.project-hero-top
+{
+    align-items: center;
+    display: flex;
+    gap: .75rem;
+    justify-content: space-between;
+    margin-bottom: .85rem;
+}
+
+.project-eyebrow
+{
+    color: #52d6e8;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.project-hero h1
+{
+    font-size: clamp(2.5rem, 6vw, 4.25rem);
+    font-weight: 600;
+    line-height: 1.05;
+    margin: 0 0 .85rem 0;
+}
+
+.project-lede
+{
+    color: #e5e7eb;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    margin: 0 0 1.5rem 0;
+    max-width: 38rem;
+}
+
+.project-actions,
+.project-footer-actions
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .65rem;
+}
+
+.project-footer-actions
+{
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.project-media
+{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem auto 0 auto;
+    max-width: 920px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.project-media img
+{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top center;
+    background: #171b1f;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 8px;
+}
+
+.project-media--secondary
+{
+    margin-top: 3rem;
+}
+
+.project-body
+{
+    margin-top: 3rem;
+}
+
+.project-section + .project-section
+{
+    margin-top: 2.25rem;
+}
+
+.project-section h2
+{
+    font-size: 1.35rem;
+    margin: 0 0 .85rem 0;
+}
+
+.project-section p,
+.project-section li
+{
+    color: #d1d5db;
+    font-size: 1.02rem;
+    line-height: 1.75;
+}
+
+.project-section p
+{
+    margin: 0;
+    max-width: 42rem;
+}
+
+.project-section ul
+{
+    margin: 0;
+    padding-left: 1.15rem;
+}
+
+
+.project-stack
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-stack li
+{
+    background: rgba(82, 214, 232, .08);
+    border: 1px solid rgba(82, 214, 232, .28);
+    border-radius: 6px;
+    color: #e6edf0;
+    font-size: .86rem;
+    font-weight: 600;
+    padding: .4rem .7rem;
+}
+
+@media (max-width: 768px)
+{
+    .project-page
+    {
+        margin-top: 88px;
+    }
+
+    .project-hero h1
+    {
+        font-size: 2.35rem;
+    }
+
+    .project-lede
+    {
+        font-size: 1.05rem;
+    }
+
+    .project-media img
+    {
+        max-width: 100%;
+    }
+}
